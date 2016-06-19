@@ -5,7 +5,7 @@ version="1"
 xmlns="http://www.w3.org/ns/widgets"
 xmlns:gap="http://phonegap.com/ns/1.0"
 >
-    <name>NWSSU Task</name>
+    <name>NWSSU To Do</name>
     
     <description>Help NWSSU students do their school work on time.</description>
     <author email="buryavrea@gmail.com" href="http://composhare.com">Howard Monares</author>
