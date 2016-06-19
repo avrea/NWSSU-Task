@@ -5,16 +5,15 @@ version="1"
 xmlns="http://www.w3.org/ns/widgets"
 xmlns:gap="http://phonegap.com/ns/1.0"
 >
-    <name>Todo</name>
+    <name>NWSSU Task</name>
     
-    <description>Test your sharp thinking skill with this hilarious app.</description>
+    <description>Help NWSSU students do their school work on time.</description>
     <author email="buryavrea@gmail.com" href="http://composhare.com">Howard Monares</author>
     <content src="index.html" />
     <access origin="*" />
 
     <preference name="permissions" value="none"/>
     <preference name="android-build-tool" value="gradle" /> 
-    <gap:plugin name="cordova-plugin-admobpro" source="npm" />
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
