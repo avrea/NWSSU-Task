@@ -60,4 +60,3 @@ xmlns:gap="http://phonegap.com/ns/1.0"
     
 	<gap:splash src="splash.png" />
 </widget>
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
