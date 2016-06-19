@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>NWSSU Task</title>
+    
+	<link rel="stylesheet" href="css/ionic.min.css" />
+ 	<script src="js/ionic.bundle.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	<script type='application/javascript' src='js/fastclick.js'></script>
+	<style type="text/css">div#fullpage {display:none;}</style>
+
+</head>
+<body ng-app="myApp" ng-controller="todoCtrl">
+<CENTER><img src="logo.jpg"></CENTER>
+  <div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <input type="text" placeholder="Add new task" ng-model="todoInput" size="100"> 
+    </label>
+    <button class="button button-small" ng-click="todoAdd()">
+      Add task
+    </button>
+  </div>
+<div ng-repeat="x in todoList">
+    <li class="item item-checkbox">
+     <label class="checkbox">
+
+       <input type="checkbox" ng-model="x.done" ng-click="update()">
+     </label>
+
+     <span>{{x.todoText}} </span>
+  </li>
+</div>
+<footer>
+<CENTER>Developed by facebook.com/howardmonares<BR>Admin Howard | Avrea Organization</CENTER>
+</footer>
+<button class="button button-block button-assertive" ng-click="remove()">
+ Delete checked tasks
+</button>
+<script type="text/javascript">window.addEventListener("load",function(){new FastClick(document.body)},!1);</script>
+</body>
+</html>
